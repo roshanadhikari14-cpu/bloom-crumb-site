@@ -1,0 +1,142 @@
+<title>Bloom &amp; Crumb Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+<div class="topbar">
+  <span>Demo storefront</span><i></i><span>Sample products only</span><i></i><span>Concept design</span>
+</div>
+
+<header class="site-header" id="top">
+  <button class="burger" aria-label="Menu" id="burger"><span></span><span></span><span></span></button>
+  <a class="logo" href="#top">Bloom &amp; Crumb</a>
+  <form class="search" onsubmit="return false">
+    <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input type="search" placeholder="Search for cakes, occasion, flavour, and more...">
+  </form>
+  <a class="hdr-link deliver" href="#cities"><small>Delivering to</small><b>Select pincode ▾</b></a>
+  <a class="hdr-link" href="#footer">Track Order</a>
+  <a class="hdr-link" href="#footer">Login / Signup</a>
+  <button class="cart" id="cartBtn" aria-label="Cart">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 7h13l-1.5 9H8L6 7zm0 0L5 3H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+    <em id="cartCount">0</em>
+  </button>
+</header>
+
+<nav class="catnav" id="catnav">
+  <a href="#categories">Cakes</a><a href="#categories">Bento</a><a href="#categories">Desserts &amp; Hampers</a>
+  <a href="#occasions">Birthday</a><a href="#occasions">Anniversary</a><a href="#categories">Kids Cakes</a>
+  <a href="#categories">Photo Cakes</a><a href="#occasions">Occasions</a><a href="#cities">Delivery Cities</a>
+  <a class="hot" href="#bestsellers">Fresh Today</a>
+</nav>
+
+<!-- ============ HERO FILM (scroll-scrubbed) ============ -->
+<section class="film" id="filmA" data-frames="frames/a/" data-count="100">
+  <div class="film-pin">
+    <div class="glow"></div>
+    <div class="film-copy left">
+      <p class="eyebrow">Baked this morning</p>
+      <h1 class="serif">Handcrafted<br>layer by layer</h1>
+      <p class="lead">Layer by layer, handcrafted by our bakers and delivered fresh to your door.</p>
+    </div>
+    <div class="film-stage"><canvas></canvas></div>
+    <div class="film-copy right">
+      <div class="chapter" data-from="0" data-to="0.34"><b>01</b><span>Soft, airy sponge baked from scratch</span></div>
+      <div class="chapter" data-from="0.34" data-to="0.68"><b>02</b><span>Belgian ganache poured warm</span></div>
+      <div class="chapter" data-from="0.68" data-to="0.9"><b>03</b><span>Finished with fresh berries &amp; curls</span></div>
+    </div>
+    <div class="film-foot">
+      <h2 class="serif big">BAKED FRESH</h2>
+      <p>Gourmet cakes for every celebration.</p>
+      <a class="btn" href="#bestsellers">Order Now</a>
+    </div>
+    <div class="progress"><i></i></div>
+    <div class="scroll-hint">Scroll to build the cake</div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="wrap" id="categories">
+  <h2 class="sec-title">What will you <em>wish</em> for?</h2>
+  <div class="cats" id="cats"></div>
+</section>
+
+<!-- ============ BESTSELLERS ============ -->
+<section class="wrap" id="bestsellers">
+  <div class="sec-head">
+    <div><p class="eyebrow">India loves</p><h2 class="sec-title left">Bestsellers from across the country</h2></div>
+    <div class="chips" id="chips">
+      <button class="on" data-f="all">All</button><button data-f="choc">Chocolate</button><button data-f="fruit">Fruit</button><button data-f="egg">Eggless</button><button data-f="premium">Premium</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ============ FILM B ============ -->
+<section class="film alt" id="filmB" data-frames="frames/b/" data-count="80">
+  <div class="film-pin">
+    <div class="glow"></div>
+    <div class="film-copy left">
+      <p class="eyebrow">Signature</p>
+      <h2 class="serif h1like">Chocolate<br>ganache,<br>poured to order</h2>
+      <p class="lead">Two sponge layers, a ribbon of molten Belgian chocolate and a crown of berries – assembled the moment you order.</p>
+      <a class="btn ghost" href="#bestsellers">Shop Chocolate Cakes</a>
+    </div>
+    <div class="film-stage"><canvas></canvas></div>
+    <div class="film-copy right stats">
+      <div><b data-count-to="3">0</b><span>layers of hand-baked sponge</span></div>
+      <div><b data-count-to="12">0</b><span>fresh berries on every cake</span></div>
+      <div><b data-count-to="100">0</b><span>% baked the day it ships</span></div>
+    </div>
+    <div class="progress"><i></i></div>
+  </div>
+</section>
+
+<!-- ============ OCCASIONS ============ -->
+<section class="wrap" id="occasions">
+  <h2 class="sec-title">Celebrate every <em>occasion</em></h2>
+  <div class="occ" id="occ"></div>
+</section>
+
+<!-- ============ PROMISES ============ -->
+<section class="promises">
+  <div class="wrap">
+    <h2 class="sec-title">Our promise</h2>
+    <div class="pgrid">
+      <div><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 12v13l8 5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><h3>60-minute delivery</h3><p>Last-minute plans? We bake, pack and ride fast.</p></div>
+      <div><svg viewBox="0 0 48 48"><path d="M8 28c0-9 7-16 16-16s16 7 16 16" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 28h36v8a4 4 0 01-4 4H10a4 4 0 01-4-4z" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><h3>Baked fresh daily</h3><p>No freezers, no shortcuts – every cake is made the same day.</p></div>
+      <div><svg viewBox="0 0 48 48"><path d="M24 40S7 30 7 18a9 9 0 0117-4 9 9 0 0117 4c0 12-17 22-17 22z" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><h3>Made with love</h3><p>Real Belgian chocolate, real fruit, real butter.</p></div>
+      <div><svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 22h36" stroke="currentColor" stroke-width="2.5"/></svg><h3>Easy payments</h3><p>UPI, cards, wallets and cash on delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITIES ============ -->
+<section class="wrap" id="cities">
+  <h2 class="sec-title">We deliver across <em>India</em></h2>
+  <div class="cities" id="cityList"></div>
+</section>
+
+<!-- ============ NEWSLETTER / FOOTER ============ -->
+<section class="news">
+  <div class="wrap">
+    <h2 class="serif">Get 10% off your first cake</h2>
+    <form onsubmit="this.querySelector('button').textContent='Subscribed ✓';return false"><input type="email" placeholder="Enter Email Address" required><button class="btn">Subscribe</button></form>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="wrap fgrid">
+    <div><a class="logo light" href="#top">Bloom &amp; Crumb</a><p>Gourmet cakes &amp; desserts, baked fresh and delivered fast.</p></div>
+    <div><h4>Cakes</h4><a href="#">Birthday Cakes</a><a href="#">Anniversary Cakes</a><a href="#">Photo Cakes</a><a href="#">Eggless Cakes</a></div>
+    <div><h4>Company</h4><a href="#">Our Story</a><a href="#">Contact Us</a><a href="#">Track Shipment</a><a href="#">Careers</a></div>
+    <div><h4>Follow</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a><a href="#">LinkedIn</a></div>
+  </div>
+  <p class="legal">Concept design with sample products. Not a real store.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
