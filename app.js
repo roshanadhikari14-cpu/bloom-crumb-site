@@ -3,7 +3,7 @@ function Film(section){
   const dir = section.dataset.frames, n = +section.dataset.count;
   const canvas = section.querySelector('canvas'), ctx = canvas.getContext('2d');
   const bar = section.querySelector('.progress i');
-  const chapters = [...section.querySelectorAll('.chapter')];
+  const chapters = [...section.querySelectorAll('.chapter,.pop')];
   const foot = section.querySelector('.film-foot');
   const hint = section.querySelector('.scroll-hint');
   const counters = [...section.querySelectorAll('[data-count-to]')];
