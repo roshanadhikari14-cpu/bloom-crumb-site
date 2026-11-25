@@ -190,3 +190,10 @@ footer{background:#2b1b14;color:#d9c7a8;padding-bottom:30px}
   .wrap{padding-top:52px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chapter,.film-foot *{transition:none}}
+
+.film.rose{height:340vh;background:radial-gradient(circle at 50% 45%,#f7dfd8 0,#ecc9c0 85%)}
+.film.rose .film-pin{grid-template-columns:1fr minmax(320px,46vh) 1fr}
+.film.rose .film-stage{aspect-ratio:720/920;-webkit-mask-image:radial-gradient(ellipse 62% 58% at 50% 48%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 62% 58% at 50% 48%,#000 70%,transparent 100%)}
+.film.rose .glow{background:radial-gradient(circle,rgba(255,240,236,.8),rgba(255,255,255,0) 65%)}
+.film.rose .eyebrow,.film.rose .chapter b{color:#b8344a}
+@media(max-width:1000px){.film.rose .film-pin{grid-template-columns:1fr}.film.rose .film-stage{height:46vh;width:auto}}
